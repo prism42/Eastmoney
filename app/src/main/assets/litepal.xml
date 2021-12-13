@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="eastmoney" />
+
+    <version value="1" />
+
+    <list>
+        <mapping class="com.tkid.eastmoney.model.TransactionRecordTable"/>
+        <mapping class="com.tkid.eastmoney.model.StockRecordTable"/>
+    </list>
+
+</litepal>

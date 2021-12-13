@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.AppDebugActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="证券名称"/>
+
+        <com.hjq.shape.view.ShapeEditText
+            android:id="@+id/set_debug_stock_name"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:hint="证券名称"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:shape="rectangle"
+            app:shape_radius="5dp"
+            app:shape_strokeColor="@color/common_accent_color"
+            app:shape_strokeWidth="1dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="证券代码"/>
+
+        <com.hjq.shape.view.ShapeEditText
+            android:id="@+id/set_debug_stock_code"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:hint="证券代码"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="6"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:shape="rectangle"
+            app:shape_radius="5dp"
+            app:shape_strokeColor="@color/common_accent_color"
+            app:shape_strokeWidth="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="开盘价"/>
+
+        <com.hjq.shape.view.ShapeEditText
+            android:id="@+id/set_debug_opening_price"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:hint="开盘价"
+            android:inputType="number"
+            android:digits="0123456789."
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:shape="rectangle"
+            app:shape_radius="5dp"
+            app:shape_strokeColor="@color/common_accent_color"
+            app:shape_strokeWidth="1dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="收盘价"/>
+
+        <com.hjq.shape.view.ShapeEditText
+            android:id="@+id/set_debug_closing_price"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:hint="收盘价"
+            android:inputType="number"
+            android:digits="0123456789."
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:shape="rectangle"
+            app:shape_radius="5dp"
+            app:shape_strokeColor="@color/common_accent_color"
+            app:shape_strokeWidth="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="现价"/>
+
+        <com.hjq.shape.view.ShapeEditText
+            android:id="@+id/set_debug_current_price"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:hint="现价"
+            android:inputType="number"
+            android:digits="0123456789."
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:shape="rectangle"
+            app:shape_radius="5dp"
+            app:shape_strokeColor="@color/common_accent_color"
+            app:shape_strokeWidth="1dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="成本"/>
+
+
+        <com.hjq.shape.view.ShapeEditText
+            android:id="@+id/set_debug_cost_price"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:hint="成本"
+            android:inputType="number"
+            android:digits="0123456789."
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:shape="rectangle"
+            app:shape_radius="5dp"
+            app:shape_strokeColor="@color/common_accent_color"
+            app:shape_strokeWidth="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="持仓"/>
+
+        <com.hjq.shape.view.ShapeEditText
+            android:id="@+id/set_debug_position"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:inputType="number"
+            android:hint="持仓"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:shape="rectangle"
+            app:shape_radius="5dp"
+            app:shape_strokeColor="@color/common_accent_color"
+            app:shape_strokeWidth="1dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="总资产"/>
+
+        <com.hjq.shape.view.ShapeEditText
+            android:id="@+id/set_debug_total_assets"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:hint="总资产"
+            android:inputType="number"
+            android:digits="0123456789."
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:shape="rectangle"
+            app:shape_radius="5dp"
+            app:shape_strokeColor="@color/common_accent_color"
+            app:shape_strokeWidth="1dp" />
+
+
+    </LinearLayout>
+
+    <com.hjq.shape.view.ShapeTextView
+        android:id="@+id/tv_debug_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:text="修改"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:shape="rectangle"
+        app:shape_radius="10dp"
+        app:shape_shadowColor="#AA5A8DDF"
+        app:shape_shadowSize="10dp"
+        app:shape_solidColor="#FFFFFF" />
+
+</LinearLayout>

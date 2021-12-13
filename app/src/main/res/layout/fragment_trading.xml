@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff5500"
+    tools:context=".ui.fragment.TradingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="8dp"
+                android:src="@drawable/c28"/>
+
+            <LinearLayout
+                android:layout_width="178dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|bottom"
+                    android:textColor="@color/orange_bg"
+                    android:textSize="20sp"
+                    android:paddingBottom="4dp"
+                    android:text="普通"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|bottom"
+                    android:textColor="@color/orange_bg"
+                    android:paddingBottom="4dp"
+                    android:textSize="14sp"
+                    android:text="信用"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|bottom"
+                    android:textColor="@color/orange_bg"
+                    android:paddingBottom="4dp"
+                    android:textSize="14sp"
+                    android:text="期货"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cash_holdings_gray_bg"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:background="@drawable/cash_holdings_white_bg"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/c0q"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:text="王大锤 540****9645"/>
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/c_1"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.8dp"
+                        android:background="@color/gray_bg"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_trading_grid_buy"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/iv_trading_grid_buy"
+                                android:layout_width="27dp"
+                                android:layout_height="27dp"
+                                android:padding="3dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/trade_grid_buy"/>
+
+                            <TextView
+                                android:id="@+id/tv_cash_holdings_total_assets_tips"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@id/iv_trading_grid_buy"
+                                android:text="买入"
+                                android:layout_marginTop="6dp"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_trading_grid_sell"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/iv_trading_grid_sell"
+                                android:layout_width="27dp"
+                                android:layout_height="27dp"
+                                android:padding="3dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/trade_grid_sell"/>
+
+                            <TextView
+                                android:id="@+id/tv_cash_holdings_"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@id/iv_trading_grid_sell"
+                                android:text="卖出"
+                                android:layout_marginTop="6dp"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_trading_grid_cancel"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/iv_trading_grid_cancel"
+                                android:layout_width="27dp"
+                                android:layout_height="27dp"
+                                android:layout_centerHorizontal="true"
+                                android:padding="3dp"
+                                android:src="@drawable/trade_grid_cancel" />
+
+                            <TextView
+                                android:id="@+id/tv_cash_holdings_cancel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iv_trading_grid_cancel"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="6dp"
+                                android:text="撤单"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_trading_grid_options_hold"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/iv_trading_grid_options_hold"
+                                android:layout_width="27dp"
+                                android:layout_height="27dp"
+                                android:layout_centerHorizontal="true"
+                                android:padding="3dp"
+                                android:src="@drawable/trade_grid_options_hold" />
+
+                            <TextView
+                                android:id="@+id/tv_cash_holdings_options_hold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@id/iv_trading_grid_options_hold"
+                                android:text="资金持仓"
+                                android:layout_marginTop="6dp"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_trading_grid_credit_entrustdeal"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/iv_trading_grid_credit_entrustdeal"
+                                android:layout_width="27dp"
+                                android:layout_height="27dp"
+                                android:layout_centerHorizontal="true"
+                                android:padding="3dp"
+                                android:src="@drawable/trade_grid_credit_entrustdeal" />
+
+                            <TextView
+                                android:id="@+id/tv_cash_holdings_credit_entrustdeal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@id/iv_trading_grid_credit_entrustdeal"
+                                android:text="委托成交"
+                                android:layout_marginTop="6dp"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_trading_grid_newstock"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/iv_trading_grid_newstock"
+                                android:layout_width="27dp"
+                                android:layout_height="27dp"
+                                android:layout_centerHorizontal="true"
+                                android:padding="3dp"
+                                android:src="@drawable/trade_grid_newstock" />
+
+                            <TextView
+                                android:id="@+id/tv_cash_holdings_newstock"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/iv_trading_grid_newstock"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="6dp"
+                                android:text="新股新债"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_trading_grid_options_yyzz"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/iv_trading_grid_options_yyzz"
+                                android:layout_width="27dp"
+                                android:layout_height="27dp"
+                                android:layout_centerHorizontal="true"
+                                android:padding="3dp"
+                                android:src="@drawable/trade_grid_options_yyzz" />
+
+                            <TextView
+                                android:id="@+id/tv_cash_holdings_options_yyzz"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@id/iv_trading_grid_options_yyzz"
+                                android:text="银证转账"
+                                android:layout_marginTop="6dp"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_trading_grid_credit_more"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/iv_trading_grid_credit_more"
+                                android:layout_width="27dp"
+                                android:layout_height="27dp"
+                                android:layout_centerHorizontal="true"
+                                android:padding="3dp"
+                                android:src="@drawable/trade_grid_credit_more" />
+
+                            <TextView
+                                android:id="@+id/tv_cash_holdings_credit_more"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@id/iv_trading_grid_credit_more"
+                                android:text="更多"
+                                android:layout_marginTop="6dp"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:background="@color/gray_bg"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="火速报名"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:background="@color/gray_bg"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:layout_height="50dp">
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

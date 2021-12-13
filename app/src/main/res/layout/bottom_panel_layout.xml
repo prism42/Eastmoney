@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tkid.eastmoney.widget.BottomControlPanel xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentBottom="true"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical">
+
+    <com.tkid.eastmoney.widget.ImageText
+        android:id="@+id/btn_home"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        />
+
+    <com.tkid.eastmoney.widget.ImageText
+        android:id="@+id/btn_information"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        />
+
+    <com.tkid.eastmoney.widget.ImageText
+        android:id="@+id/btn_optional"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        />
+
+    <com.tkid.eastmoney.widget.ImageText
+        android:id="@+id/btn_market"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        />
+
+    <com.tkid.eastmoney.widget.ImageText
+        android:id="@+id/btn_trading"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        />
+
+</com.tkid.eastmoney.widget.BottomControlPanel>

@@ -1,0 +1,125 @@
+package com.tkid.appsdk.base.action;
+
+import android.os.Bundle;
+import android.os.Parcelable;
+
+import androidx.annotation.Nullable;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+
+/**
+ * author : Prism
+ * Believe and act as if it were impossible to fail.
+ * 心怀不败之志，脚踏不凡之路.
+ * He who has a why to live can bear almost any how.
+ * 知生命之意者，亦可承其重.
+ * desc   :
+ */
+public interface BundleAction {
+
+    @Nullable
+    Bundle getBundle();
+
+    default int getInt(String name) {
+        return getInt(name, 0);
+    }
+
+    default int getInt(String name, int defaultValue) {
+        Bundle bundle = getBundle();
+        if (bundle == null) {
+            return defaultValue;
+        }
+        return bundle.getInt(name, defaultValue);
+    }
+
+    default long getLong(String name) {
+        return getLong(name, 0);
+    }
+
+    default long getLong(String name, int defaultValue) {
+        Bundle bundle = getBundle();
+        if (bundle == null) {
+            return defaultValue;
+        }
+        return bundle.getLong(name, defaultValue);
+    }
+
+    default float getFloat(String name) {
+        return getFloat(name, 0);
+    }
+
+    default float getFloat(String name, int defaultValue) {
+        Bundle bundle = getBundle();
+        if (bundle == null) {
+            return defaultValue;
+        }
+        return bundle.getFloat(name, defaultValue);
+    }
+
+    default double getDouble(String name) {
+        return getDouble(name, 0);
+    }
+
+    default double getDouble(String name, int defaultValue) {
+        Bundle bundle = getBundle();
+        if (bundle == null) {
+            return defaultValue;
+        }
+        return bundle.getDouble(name, defaultValue);
+    }
+
+    default boolean getBoolean(String name) {
+        return getBoolean(name, false);
+    }
+
+    default boolean getBoolean(String name, boolean defaultValue) {
+        Bundle bundle = getBundle();
+        if (bundle == null) {
+            return defaultValue;
+        }
+        return bundle.getBoolean(name, defaultValue);
+    }
+
+    default String getString(String name) {
+        Bundle bundle = getBundle();
+        if (bundle == null) {
+            return null;
+        }
+        return bundle.getString(name);
+    }
+
+    default <P extends Parcelable> P getParcelable(String name) {
+        Bundle bundle = getBundle();
+        if (bundle == null) {
+            return null;
+        }
+        return bundle.getParcelable(name);
+    }
+
+    @SuppressWarnings("unchecked")
+    default <S extends Serializable> S getSerializable(String name) {
+        Bundle bundle = getBundle();
+        if (bundle == null) {
+            return null;
+        }
+        return (S) (bundle.getSerializable(name));
+    }
+
+    default ArrayList<String> getStringArrayList(String name) {
+        Bundle bundle = getBundle();
+        if (bundle == null) {
+            return null;
+        }
+        return bundle.getStringArrayList(name);
+    }
+
+    default ArrayList<Integer> getIntegerArrayList(String name) {
+        Bundle bundle = getBundle();
+        if (bundle == null) {
+            return null;
+        }
+        return bundle.getIntegerArrayList(name);
+    }
+
+}

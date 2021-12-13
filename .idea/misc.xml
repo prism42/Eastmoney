@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable-hdpi/aa4.xml" value="0.22083333333333333" />
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable-hdpi/amg.xml" value="0.22083333333333333" />
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable-hdpi/amo.xml" value="0.22083333333333333" />
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable-hdpi/amv.xml" value="0.22083333333333333" />
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable-v21/a4y.xml" value="0.22083333333333333" />
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable-v21/a_h.xml" value="0.22083333333333333" />
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable/add_ic.xml" value="0.29444444444444445" />
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable/cash_holdings_bg.xml" value="0.27685185185185185" />
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable/cash_holdings_gray_bg.xml" value="0.21614583333333334" />
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable/cash_holdings_white_bg.xml" value="0.19322916666666667" />
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable/fragment_rectangle_gray_bg.xml" value="0.29814814814814816" />
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable/layer_tab_indicator.xml" value="0.22083333333333333" />
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable/layer_tab_indicator_home.xml" value="0.25925925925925924" />
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable/textview_round_corner_shape_bg.xml" value="0.28703703703703703" />
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable/view_amount_edit_blue_bg.xml" value="0.29444444444444445" />
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable/view_amount_edit_pink_bg.xml" value="0.29444444444444445" />
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable/view_amount_edit_red_bg.xml" value="1.5" />
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable/view_amount_edit_transparent_bg.xml" value="0.22083333333333333" />
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable/view_amount_left_blue_bg.xml" value="0.29444444444444445" />
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable/view_amount_left_pink_bg.xml" value="0.29444444444444445" />
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable/view_amount_pink_bg.xml" value="0.22083333333333333" />
+        <entry key="..\:/Eastmoney/app/src/main/res/drawable/view_amount_right_blue_bg.xml" value="0.29444444444444445" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/activity_app_debug.xml" value="0.1" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/activity_camera_xactivity.xml" value="0.28940217391304346" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/activity_cash_holdings.xml" value="0.22" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/activity_main.xml" value="0.28940217391304346" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/activity_trading.xml" value="0.30978260869565216" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/bottom_image_text.xml" value="0.28940217391304346" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/bottom_panel_layout.xml" value="0.28940217391304346" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/fragment_buy.xml" value="0.1" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/fragment_commissioned.xml" value="0.2558876811594203" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/fragment_information.xml" value="0.1" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/fragment_inventory.xml" value="0.2046875" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/fragment_martek.xml" value="0.1" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/fragment_optional.xml" value="0.2558876811594203" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/fragment_trading.xml" value="0.25" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/item_cash_holdings.xml" value="0.31567028985507245" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/item_cash_holdings_head.xml" value="0.1" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/item_cash_holdings_title.xml" value="0.3079710144927536" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/item_cash_holdings_value.xml" value="0.2046875" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/tab_custom.xml" value="0.1" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/top_panel_layout.xml" value="0.67" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/view_amount.xml" value="0.22" />
+        <entry key="..\:/Eastmoney/app/src/main/res/layout/wait_dialog.xml" value="0.3079710144927536" />
+        <entry key="..\:/Eastmoney/app/src/main/res/xml/litepal.xml" value="0.28306159420289856" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

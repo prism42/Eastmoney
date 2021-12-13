@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+
+    <TextView
+        android:id="@+id/iv_top_panel_back"
+        android:layout_width="165px"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:drawableLeft="@drawable/c7h"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/c7h"/>
+    
+    <RelativeLayout
+        android:layout_width="298px"
+        android:layout_height="match_parent"
+        android:layout_margin="8px"
+        android:visibility="gone"
+        android:layout_centerInParent="true">
+
+        <CheckedTextView
+            android:id="@+id/ctv_top_panel_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="普通交易"/>
+
+        <CheckedTextView
+            android:id="@+id/ctv_top_panel_title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/ctv_top_panel_title"
+            android:textAlignment="center"
+            android:text="王大锤"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/c4g_whitemode" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_top_panel_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_top_panel_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通交易"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="谭振中"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/ll_top_panel_title"
+        android:src="@drawable/c4g_whitemode"/>
+
+    <ImageView
+        android:id="@+id/iv_top_panel_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/awi"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/iv_top_panel_refresh"
+        android:src="@drawable/bw4"/>
+
+</RelativeLayout>
